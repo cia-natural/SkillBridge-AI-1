@@ -18,7 +18,7 @@ export default function AICoach() {
 
   useEffect(() => {
     loadFromDB('coach_history', [
-      { role: 'assistant', content: 'Hi! I am your AI Career Coach powered by Gemma 4. How can I help you today?' }
+      { role: 'assistant', content: 'Hi! I am your AI Career Coach powered by Gemini. How can I help you today?' }
     ]).then(setMessages);
   }, []);
 
@@ -69,7 +69,7 @@ export default function AICoach() {
         </div>
         <div>
           <h2 className="font-bold text-slate-900">Career Coach</h2>
-          <p className="text-xs text-slate-500">Powered by Gemma 4</p>
+          <p className="text-xs text-slate-500">Powered by Gemini</p>
         </div>
       </div>
 

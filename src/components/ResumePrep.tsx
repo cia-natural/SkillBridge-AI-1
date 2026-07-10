@@ -13,7 +13,7 @@ export default function ResumePrep() {
   const handleAnalyze = async () => {
     if (!resumeText || !targetRole) return;
     if (!isOnline) {
-      alert("You are currently offline. Resume analysis requires an active internet connection to communicate with Gemma.");
+      alert("You are currently offline. Resume analysis requires an active internet connection to communicate with Gemini.");
       return;
     }
     
