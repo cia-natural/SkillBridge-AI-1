@@ -43,7 +43,7 @@ export default function Dashboard({ onNavigate }: DashboardProps) {
           <div className="flex justify-between items-start">
             <div>
               <p className="text-xs opacity-80 mb-1 uppercase tracking-widest">AI Career Mentor</p>
-              <h3 className="text-lg font-bold">Gemini AI</h3>
+              <h3 className="text-lg font-bold">Gemma 4.26b</h3>
             </div>
             <span className="text-xl">✨</span>
           </div>

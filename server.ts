@@ -24,10 +24,10 @@ app.post("/api/chat", async (req, res) => {
   try {
     const { prompt, systemInstruction } = req.body;
     const response = await ai.models.generateContent({
-      model: "gemini-3.5-flash",
+      model: "gemma-4-31b-it",
       contents: prompt,
       config: {
-        systemInstruction: systemInstruction || "You are a helpful AI Career Coach powered by Gemini.",
+        systemInstruction: systemInstruction || "You are a helpful AI Career Coach powered by Gemma.",
       },
     });
     res.json({ text: response.text });
@@ -43,7 +43,7 @@ app.post("/api/review-resume", async (req, res) => {
     const { resumeText, targetRole } = req.body;
     const prompt = `Please review this resume for the role of ${targetRole}. Provide an ATS score out of 100, identify skill gaps, and give actionable suggestions for optimization.\n\nResume:\n${resumeText}`;
     const response = await ai.models.generateContent({
-      model: "gemini-3.5-flash",
+      model: "gemma-4-e4b-it",
       contents: prompt,
       config: {
         systemInstruction: "You are an expert ATS and Resume Reviewer AI.",
@@ -73,7 +73,7 @@ app.post("/api/interview", async (req, res) => {
     const { role, type } = req.body;
     const prompt = `Generate 3 realistic ${type} interview questions for a ${role} position.`;
     const response = await ai.models.generateContent({
-      model: "gemini-3.5-flash",
+      model: "gemma-4-26b-a4b-it",
       contents: prompt,
       config: {
         systemInstruction: "You are an expert technical and HR interviewer.",

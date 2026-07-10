@@ -180,7 +180,7 @@ export default function App() {
 
         <footer className="h-8 bg-white border-t border-slate-200 px-8 flex items-center justify-between text-[10px] text-slate-400 shrink-0 hidden lg:flex">
           <div className="flex items-center gap-4">
-            <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span> Gemini AI Engine Online</span>
+            <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></span> Gemma AI Engine Online</span>
             <span className="flex items-center gap-1.5"><span className="w-1.5 h-1.5 bg-indigo-500 rounded-full"></span> Storage: 14.2MB of 500MB</span>
           </div>
           <div className="italic">Press Cmd+K to open AI Mentor Quick Command</div>
